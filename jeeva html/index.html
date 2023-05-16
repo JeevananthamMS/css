@@ -1,0 +1,222 @@
+<!DOCTYPE html> <!--declaration defines that this document is an HTML5 document-->
+<html lang="en"><!--element is the root element of an HTML page-->
+<head><!--element contains meta information about the HTML page-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)-->
+</head><!--element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.-->
+<style>
+    table, th, td {
+      border:1px solid black;
+      border-collapse: collapse; /* boreder line merge */
+    }
+    th{
+        text-align: left;
+
+    }
+    table{
+        border-spacing: 22px;
+    }
+    </style>
+<body>
+    <p>This is a Heading</p>
+    <h1> welcome</h1>
+    <h2> welcome</h2>
+    <h3>welcome</h3>
+    <h4>welcome</h4>
+    <h5>welcome</h5>
+    <h6>welcome</h6><br>
+    <hr>
+    <p> This is a paragraph.</p>
+    <pre>
+  My Bonnie lies over the ocean.
+
+  My Bonnie lies over the sea.
+
+  My Bonnie lies over the ocean.
+
+  Oh, bring back my Bonnie to me.
+    </pre>
+    <p><b><del>This text is bold and del</del></b></p>
+    <strong>This text is important!</strong>
+<p><i><mark> This text is italic  and mark <ins><q>red</q></ins></mark></i></p>
+<p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+    </address>
+    <bdo dir="rtl">This line will be written from right to left</bdo>
+<hr>
+    <p>image and source and title</p>
+    <img src="a" alt="image" title="title" width="104" height="142">
+    <hr>
+    <p> This is a link</p>
+    <a href="https://www.google.com/" target="_self">Target andg google</a>
+    <hr>
+    <p> ul and ol and dp</p>
+    <ul>
+        <li>unorder list this css</li>
+        <li>Inline - by using the <mark> style </mark>attribute inside HTML elements</li>
+        <li>Internal - by using a < style > element in the    < head > section</li>
+        <li>External - by using a < link > element to link to an external CSS file</li>
+    </ul>
+    <ol>
+        <li>order list</li>
+        <li>order list</li>
+        <li>order list</li>
+    </ol>
+    
+    <hr>
+    <p> This is a paragraph.</p>
+    <hr>
+    <p> This is a paragraph.</p>
+    <hr>
+    <p> This is a paragraph.</p>
+    <hr>
+    h2>Button as a Links</h2>
+
+    <p>Click the button to go to the HTML tutorial.</p>
+    
+    <button onclick="alert('hi ! welcome')">HTML Tutorial</button>
+<hr>
+<h1> id and bookmark href and dl list </h1>
+<dl>
+    <dt>id and href</dt>
+    <dd>Use the id attribute (id="value") to define bookmarks in a page</dd>
+    <dd>Use the href attribute (href="#value") to link to the bookmark </dd>
+</dl>
+
+<p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+<p><a href="#end">Jump to last Chapter</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="end" >Chapter 16</h2>
+<p>This chapter explains ba bla </p>
+<hr>
+<br>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+
+<hr>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<p>The picture element can be used when the image format is not supported by all devices.</p>
+
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+<hr>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+    <caption>Table caption</caption>
+  <tr>
+    <th colspan="2">Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td rowspan="2">Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+<hr><hr><br>
+<picture>
+  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture><hr><hr><br><br>
+<video width="320" height="240" controls autoplay muted>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video><hr><hr><br><br>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><hr><hr><br><br>
+
+</body>
+</html>
